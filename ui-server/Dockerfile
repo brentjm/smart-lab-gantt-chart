@@ -9,4 +9,4 @@ RUN npm install\
 
 FROM nginx
 COPY ./nginx.conf /etc/nginx/conf.d/.
-COPY --from=builder /app/build/ /usr/share/nginx/html/gantt-chart
+COPY --from=builder /app/build/ /usr/share/nginx/html/smart-lab-gantt-chart

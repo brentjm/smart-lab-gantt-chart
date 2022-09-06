@@ -1,0 +1,15 @@
+http:
+  routers:
+    smart-lab-gantt-chart:
+      entrypoints: 
+        - web
+        - web-secure
+      tls: true
+      rule: "PathPrefix(`/smart-lab-gantt-chart`)"
+      service: "smart-lab-gantt-chart"
+
+  services:
+    smart-lab-gantt-chart:
+      loadBalancer:
+        servers:
+          - url: "http://smart-lab-gantt-chart"

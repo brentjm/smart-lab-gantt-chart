@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+  smart-lab-gantt-chart:
+    build:
+      context: ./ui-server
+      dockerfile: Dockerfile
+    image: smart-lab-gantt-chart
+    container_name: smart-lab-gantt-chart
+    restart: unless-stopped
+    networks:
+      - reverse-proxy
+
+networks:
+  reverse-proxy:
+    external: true
+

@@ -86,10 +86,10 @@ const App = () => {
         onExpanderClick={handleExpanderClick}
         listCellWidth={isChecked ? "155px" : ""}
         columnWidth={columnWidth}
-      	rowHeight={40}
+      	rowHeight={25}
       	barCornerRadius={5}
       	fontFamily={"Calibri"}
-      	fontSize={"16px"}
+      	fontSize={"10px"}
       	barBackgroundColor={"#03215d"}
       	barBackgroundSelectedColor={"#214181"}
       	barProgressColor={"#196977"}
